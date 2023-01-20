@@ -1,2 +1,0 @@
-to begin, run this in the terminal (ctrl + `)
-npx tailwindcss -i ./src/input.css -o ./dist/styles.css --watch
