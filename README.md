@@ -4,7 +4,7 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 
 
 ### Links
-live-server - [@😮]https://accedie-xcd.github.io/frontend-mentor-interaction-rating/
+live-server - https://accedie-xcd.github.io/frontend-mentor-interaction-rating/
 
 ### Built with
 - tailwindcss 
