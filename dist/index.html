@@ -6,32 +6,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Interactive rating</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="">
 </head>
 
 <body class="h-screen bg-neutral-900 text-slate-400 grid place-content-center">
 
   <main class=" bg-slate-900 mx-6 px-8 py-4 space-y-5 rounded-xl max-w-md">
-    <div class="star aspect-square bg-slate-800 w-8 grid place-content-center rounded-full">
-      <img src="images/icon-star.svg" 
+    <div id="starBg" class="star aspect-square bg-slate-800 w-8 grid place-content-center rounded-full">
+      <img id="star" src="images/icon-star.svg" 
       alt="star image" >
     </div>
     
-    <h1 class=" text-white text-xl font-bold">How did we do?</h1>
+    <h1 id="toThankYou"  class=" text-white text-xl font-bold">How did we do?</h1>
     
-    <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p> 
+    <p id="userRating"> </p>
 
-    <div class="flex justify-between mx-4">
+    <p id="appreciate">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p> 
+
+    <div id="scale" class="flex justify-between mx-4">
       <button id="r1" class="aspect-square bg-slate-800 w-12 grid place-content-center rounded-full hover:!bg-orange-600">1</button>
       <button id="r2" class="aspect-square bg-slate-800 w-12 grid place-content-center rounded-full hover:!bg-orange-600">2</button>
       <button id="r3" class="aspect-square bg-slate-800 w-12 grid place-content-center rounded-full hover:!bg-orange-600">3</button>
       <button id="r4" class="aspect-square bg-slate-800 w-12 grid place-content-center rounded-full hover:!bg-orange-600">4</button>
       <button id="r5" class="aspect-square bg-slate-800 w-12 grid place-content-center rounded-full hover:!bg-orange-600 ">5</button>
-      
     </div>
 
-    <button id="btn" class="bg-orange-500 h-12 rounded-3xl w-full text-white font-bold tracking-widest">SUBMIT</button>
-    
+    <button id="btn" class="bg-orange-500 h-12 rounded-3xl w-full 
+    text-white font-bold tracking-widest 
+    hover:bg-white hover:text-orange-500
+      ">SUBMIT</button>
     
   </main>
   
@@ -44,9 +46,5 @@
 
   <script src="app.js"></script>
 </body>
-
-
-
-
 
 </html>
